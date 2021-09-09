@@ -9,9 +9,12 @@
         <link rel="stylesheet" href="./bootstrap.css">
         <link rel="stylesheet" href="./styles.css">
         <link rel="icon" href="./images/diamant luna onglet.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Molle:ital@1&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header id="header">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <div id="logo">
@@ -23,19 +26,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Accueil</a>
+                                <a class="nav-link" href="#header">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacts</a>
+                                <a class="nav-link" href="#ad-contact-form">Contacts</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Mentions Légales</a>
+                                <a class="nav-link" href="#mentions">Mentions Légales</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Nos Conditions Générales de Ventes</a>
+                                <a class="nav-link" href="#conditions">Nos Conditions Générales de Ventes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Horaires</a>
+                                <a class="nav-link" href="#horaires">Horaires</a>
                             </li>
                         </ul>
                     </div>
@@ -49,11 +52,8 @@
                 </div>
                 <div id="ad-contact-form" class="col-12 col-sm-6">
                     <p>Notre Adresse : <br> 244B Rue du Point du Jour <br> 01000 Saint-Denis-lès-Bourg</p>
-                    <br>
                     <p>Numéro : <br> 0474XXXXXX</p>
-                    <br>
                     <p>Mail : <br> XXXXXXXXX@gmail.com</p>
-                    <br>
                     <form>
                         <div class="row mb-3">
                             <label id="email-form" for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
@@ -67,37 +67,28 @@
                                 <input type="mail" class="form-control" id="Mail">
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <div id="bouton">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </section>
         <br>
-        <h1>Mentions Légales</h1>
+        <h4 id="mentions">Mentions Légales</h4>
         <br>
-        <h1>Nos Conditions Générales de Ventes</h1>
+        <h4 id="conditions">Nos Conditions Générales de Ventes</h4>
         <br>
         <footer>
-            <h3>Nos Horaires D'Ouverture</h3>
-            <div id="horaires" class="row">
-                <div id="jours" class="col-6 col-sm-6">
-                    <p>Lundi</p>
-                    <p>Mardi</p>
-                    <p>Mercredi</p>
-                    <p>Jeudi</p>
-                    <p>Vendredi</p>
-                    <p>Samedi</p>
-                    <p>Dimanche</p>
-                </div>
-                <div id="heures" class="col-6 col-sm-6">
-                    <p>8h30-12h30 et 14h-19h</p>
-                    <p>8h30-12h30 et 14h-19h</p>
-                    <p>8h30-12h30 et 14h-19h</p>
-                    <p>8h30-12h30 et 14h-19h</p>
-                    <p>8h30-12h30 et 14h-19h</p>
-                    <p>8h30-12h30 et 14h-19h</p>
-                    <p>Fermé</p>
-                </div>
+            <h4>Nos Horaires D'Ouverture</h4>
+            <div id="horaires">
+                <p>Lundi 8h30-12h30 et 14h-19h</p>
+                <p>Mardi 8h30-12h30 et 14h-19h</p>
+                <p>Mercredi 8h30-12h30 et 14h-19h</p>
+                <p>Jeudi 8h30-12h30 et 14h-19h</p>
+                <p>Vendredi 8h30-12h30 et 14h-19h</p>
+                <p>Samedi 8h30-12h30 et 14h-19h</p>
+                <p>Dimanche Fermé</p>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
