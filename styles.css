@@ -6,15 +6,24 @@ html{
 body{
     background: var(--first-color);
 }
+/* header */
 .navbar{
     padding: 0;
 }
 .navbar .container-fluid{
     background-color: var(--second-color);
 }
+/* taille du logo */
 #logo img{
-    width: 100px;
+    width: 150px;
     height: auto;
+}
+/* section */
+/* pour résoudre le probleme de la barre scroll horizontale */
+.row{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
 }
 #maps{
     padding-left: 10px;
@@ -22,38 +31,10 @@ body{
     display: flex;
     justify-content: center;
 }
-#maps iframe{
-    width: 100%;
-    border-radius: 20px;
-}
-h4{
-    display: flex;
-    justify-content: center;
-}
-label, h4{
-    color: var(--second-color);
-    font-family: 'Molle', cursive;
-}
+
 p{
     color: var(--second-color);
     font-family: 'Molle', cursive;
-}
-footer h4, footer p{
-    color: var(--third-color);
-    padding-top: 10px;
-}
-footer{
-    background-color: var(--second-color);
-}
-footer #horaires{
-    margin-left: 0;
-    margin-right: 0;
-}
-/* pour résoudre le probleme de la barre scroll horizontale */
-.row{
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
 }
 #bouton{
     display: flex;
@@ -62,18 +43,42 @@ footer #horaires{
 button{
     margin-top: 10px;
 }
-footer h4{
-    display: flex;
-    justify-content: center;
+/* pour changer la taille de la maps */
+#maps iframe{
+    width: 100%;
+    border-radius: 20px;
+}
+label, h4{
+    color: var(--second-color);
     font-family: 'Molle', cursive;
 }
 #horaires{
+    margin-left: 0;
+    margin-right: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
+/* footer */
+footer{
+    background-color: var(--second-color);
+}
+footer h4{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lily Script One', cursive;
+}
+footer h4, footer p{
+    color: var(--third-color);
+    padding-top: 10px;
+}
+/* les media queries */
+@media(max-width:768px){
+
+}
 @media(max-width:576px){
+    
     iframe{
         width: 100%;
     }
