@@ -1,7 +1,9 @@
 html{
     --first-color:#e9e4f0;
-    --second-color:rgb(167, 28, 169);
-    --third-color:gold;
+    --second-color:#fc67fa;
+    --thrird-color:#f4c4f3;
+    --fourth-color:rgb(167, 28, 169);
+    --five-color:gold;
 }
 body{
     background: var(--first-color);
@@ -11,12 +13,12 @@ body{
     padding: 0;
 }
 .navbar .container-fluid{
-    background-color: var(--second-color);
+    background: linear-gradient(#fc67fa, #e9e4f0);
 }
 /* taille du logo */
 #logo img{
-    width: 150px;
-    height: auto;
+    width: 200px;
+    height: 200px;
 }
 /* section */
 /* pour résoudre le probleme de la barre scroll horizontale */
@@ -33,8 +35,8 @@ body{
 }
 
 p{
-    color: var(--second-color);
-    font-family: 'Molle', cursive;
+    color: var(--fourth-color);
+    font-family: 'Lobster', cursive;
 }
 #bouton{
     display: flex;
@@ -49,8 +51,8 @@ button{
     border-radius: 20px;
 }
 label, h4{
-    color: var(--second-color);
-    font-family: 'Molle', cursive;
+    color: var(--fourth-color);
+    font-family: 'Lobster', cursive;
 }
 #horaires{
     margin-left: 0;
@@ -62,15 +64,16 @@ label, h4{
 }
 /* footer */
 footer{
-    background-color: var(--second-color);
+    background: linear-gradient(#e9e4f0,#fc67fa);
+}
+#conditions{
+    color: var(--fourth-color);
 }
 footer h4{
     display: flex;
     justify-content: center;
-    font-family: 'Lily Script One', cursive;
-}
-footer h4, footer p{
-    color: var(--third-color);
+    font-family: 'Lobster', cursive;
+    color: var(--fourth-color);
     padding-top: 10px;
 }
 /* les media queries */

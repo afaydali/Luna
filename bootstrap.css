@@ -2967,7 +2967,7 @@ textarea.form-control-lg {
   color: gold;
   background-color: rgb(167, 28, 169);
   border-color: gold;
-  font-family: 'Molle', cursive;
+  font-family: 'Lobster', cursive;
 }
 /* couleur lors du hover */
 .btn-primary:hover {
@@ -4383,9 +4383,10 @@ textarea.form-control-lg {
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
 }
+/* header police */
 .navbar-light .navbar-nav .nav-link {
   color: gold;
-  font-family: 'Molle', cursive;
+  font-family: 'Lobster', cursive;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: plum;
