@@ -81,6 +81,17 @@ footer h4{
     color: var(--fourth-color);
     padding-top: 10px;
 }
+a svg{
+    height: 50px;
+    width: 50px;
+    color: var(--fourth-color);
+    /* pour placer un bouton "vers le haut" */
+    position: right;
+    position: bottom;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
 /* les media queries */
 @media(max-width:768px){
 
