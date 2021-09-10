@@ -66,8 +66,13 @@ label, h4{
 footer{
     background: linear-gradient(#e9e4f0,#fc67fa);
 }
+#mentions{
+    display: flex;
+    justify-content: center;
+}
 #conditions{
-    color: var(--fourth-color);
+    display: flex;
+    justify-content: center;
 }
 footer h4{
     display: flex;
