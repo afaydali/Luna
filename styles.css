@@ -1,7 +1,5 @@
 html{
     --first-color:#e9e4f0;
-    --second-color:#fc67fa;
-    --thrird-color:#f4c4f3;
     --fourth-color:rgb(167, 28, 169);
     --five-color:gold;
 }
@@ -13,7 +11,7 @@ body{
     padding: 0;
 }
 .navbar .container-fluid{
-    background: linear-gradient(#fc67fa, #e9e4f0);
+    background: linear-gradient(#7ce1f5, #e9e4f0);
 }
 /* taille du logo */
 #logo img{
@@ -21,6 +19,12 @@ body{
     height: 200px;
 }
 /* section */
+h1{
+    color: var(--fourth-color);
+    font-family: 'Sansita Swashed', cursive;
+    display: flex;
+    justify-content: center;
+}
 /* pour résoudre le probleme de la barre scroll horizontale */
 .row{
     margin-left: 0;
@@ -36,7 +40,8 @@ body{
 
 p{
     color: var(--fourth-color);
-    font-family: 'Lobster', cursive;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: large;
 }
 #bouton{
     display: flex;
@@ -52,7 +57,7 @@ button{
 }
 label, h4{
     color: var(--fourth-color);
-    font-family: 'Lobster', cursive;
+    font-family: 'Sansita Swashed', cursive;
 }
 #horaires{
     margin-left: 0;
@@ -64,7 +69,7 @@ label, h4{
 }
 /* footer */
 footer{
-    background: linear-gradient(#e9e4f0,#fc67fa);
+    background: linear-gradient(#e9e4f0,#7ce1f5);
 }
 #mentions{
     display: flex;
@@ -77,9 +82,13 @@ footer{
 footer h4{
     display: flex;
     justify-content: center;
-    font-family: 'Lobster', cursive;
+    font-family: 'Sansita Swashed', cursive;
     color: var(--fourth-color);
     padding-top: 10px;
+}
+.modal-body li{
+    color: var(--fourth-color);
+    font-family: 'Sansita Swashed', cursive;
 }
 a svg{
     height: 50px;
@@ -89,15 +98,23 @@ a svg{
     position: right;
     position: bottom;
     position: fixed;
-    right: 20px;
+    right: 5px;
     bottom: 20px;
+    border: solid 4px gold;
 }
 /* les media queries */
 @media(max-width:768px){
 
 }
 @media(max-width:576px){
-    
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+    }
     iframe{
         width: 100%;
     }
