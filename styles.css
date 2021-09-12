@@ -25,6 +25,11 @@ h1{
     display: flex;
     justify-content: center;
 }
+#produits img, #matériaux img{
+    height: auto;
+    width: 100%;
+}
+
 /* pour résoudre le probleme de la barre scroll horizontale */
 .row{
     margin-left: 0;
@@ -100,7 +105,6 @@ a svg{
     position: fixed;
     right: 5px;
     bottom: 20px;
-    border: solid 4px gold;
 }
 /* les media queries */
 @media(max-width:768px){
