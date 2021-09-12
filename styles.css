@@ -19,6 +19,9 @@ body{
     height: 200px;
 }
 /* section */
+#titre-site{
+    margin-bottom: 40px;
+}
 h1{
     color: var(--fourth-color);
     font-family: 'Sansita Swashed', cursive;
@@ -71,6 +74,8 @@ label, h4{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 /* footer */
 footer{
@@ -79,10 +84,13 @@ footer{
 #mentions{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 #conditions{
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 footer h4{
     display: flex;
