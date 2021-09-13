@@ -44,6 +44,18 @@
                                 <a class="nav-link" href="#">Accueil</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#titre-produits">Nos Produits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#titre-matériaux">Nos Matériaux</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#titre-nouveaux">Nos Nouveautés</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#titre-promo">Nos Promotions</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#ad-contact-form">Contacts</a>
                             </li>
                             <li class="nav-item">
@@ -60,36 +72,148 @@
                 </div>
             </nav>
         </header>
-        <div id="titre-site">
-            <h1>Bienvenue sur le site de la boutique</h1>
-            <h1 id="luna">Luna</h1>
+        <div id="titre-site" class="row">
+            <div id="bienvenu" class="col-12">
+                <h1>Bienvenue sur le site de la boutique</h1>
+            </div>
+            <div id="titre-luna" class="col-12">
+                <img src="./images/titre luna2.png" alt="">
+            </div>
         </div>
-        <!-- <div>
+        <div id="titre-produits" class="titresh2">
             <h2>Nos Produits</h2>
         </div>
         <div id="produits" class="row">
-            <div id="colliers" class="col-12 col-sm-3"><img src="./images/pearls-1234666_1280.jpg" alt=""></div>
-            <div id="bracelets" class="col-12 col-sm-3"><img src="./images/stainless-878335_1280.jpg" alt=""></div>
-            <div id="bagues" class="col-12 col-sm-3"><img src="./images/amethyst-2186842_1280.jpg" alt=""></div>
-            <div id="oreilles" class="col-12 col-sm-3"><img src="./images/rose-gold-1875469_1280.jpg" alt=""></div>
+            <div id="colliers" class="col-12 col-sm-3">
+                <img src="./images/pearls.jpg" alt="">
+            </div>
+            <div id="bracelets" class="col-12 col-sm-3"><img src="./images/bracelet.jpg" alt="">
+            </div>
+            <div id="bagues" class="col-12 col-sm-3">
+                <img src="./images/amethyst-2186842_1280.jpg" alt="">
+            </div>
+            <div id="oreilles" class="col-12 col-sm-3">
+                <img src="./images/jewelryear.jpg" alt="">
+            </div>
+            <div id="desc-collier" class="col-12 col-sm-3">
+                <h3>Colliers</h3>
+            </div>
+            <div id="desc-bracelet" class="col-12 col-sm-3">
+                <h3>Bracelets</h3>
+            </div>
+            <div id="desc-bague" class="col-12 col-sm-3">
+                <h3>Bagues</h3>
+            </div>
+            <div id="desc-oreilles" class="col-12 col-sm-3">
+                <h3>Boucles d'Oreilles</h3>
+            </div>
         </div>
-        <div id="titres-produits" class="row">
-            <div id="desc-collier" class="col-12 col-sm-3"><h3>Colliers</h3></div>
-            <div id="desc-bracelet" class="col-12 col-sm-3"><h3>Bracelets</h3></div>
-            <div id="desc-bague" class="col-12 col-sm-3"><h3>Bagues</h3></div>
-            <div id="desc-oreilles" class="col-12 col-sm-3"><h3>Boucles d'Oreilles</h3></div>
+        <div class="row">
+            <div id="carrousel-images" class="col-12 col-sm-6">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/montre1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h3>Schwarzer</h3>
+                            <p>Elégance et Honorifique</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/montre2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>AllMight</h3>
+                                <p>Puissance à l'extrême</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/montre3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Pretty Shy</h3>
+                                <p>Noblesse, Raffinement</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div id="desc-carousel" class="col-12 col-sm-6">
+                <div>
+                    <h3>Nos Montres</h3>
+                </div>
+                <div>
+                    <p>Tic Toc Tic Toc ! N'hésitez pas ! Venez jeter un coup d'oeil à nos montres dernières générations ! Vous allez craquer... Il y en a pour tous les goûts et pour tout le monde !</p>
+                </div>
+            </div>
         </div>
-        <div>
+        <div id="titre-matériaux" class="titresh2">
             <h2>Nos Matériaux</h2>
         </div>
         <div id="matériaux" class="row">
-            <div id="métaux" class="col-12 col-sm-6"><img src="./images/wedding-rings-3611277_1280.jpg" alt=""></div>
-            <div id="cristaux" class="col-12 col-sm-6"><img src="./images/diamond-500872_1280.jpg" alt=""></div>
+            <div id="métaux" class="col-12 col-sm-6">
+                <img src="./images/metal or.jpg" alt="">
+            </div>
+            <div id="cristaux" class="col-12 col-sm-6">
+                <img src="./images/cristal.jpg" alt="">
+            </div>
+            <div id="desc-métaux" class="col-12 col-sm-6">
+                <h3>Nos Métaux</h3>
+            </div>
+            <div id="desc-cristaux" class="col-12 col-sm-6">
+                <h3>Nos Cristaux</h3>
+            </div>
         </div>
-        <div id="desc-matériaux" class="row">
-            <div id="desc-métaux" class="col-12 col-sm-6"><h3>Nos Métaux</h3></div>
-            <div id="desc-cristaux" class="col-12 col-sm-6"><h3>Nos Cristaux</h3></div>
-        </div> -->
+        <div id="titre-nouveaux">
+            <h2>Nos Nouveautés</h2>
+        </div>
+        <div id="nouveaux" class="row">
+            <div id="nouveau-img" class="col-12 col-sm-6">
+                <img src="./images/nouveaux.jpg" alt="">
+            </div>
+            <div id="nouveau-desc" class="col-12 col-sm-6">
+                <p>
+                    Venez vite découvrir nos nouveaux produits !
+                </p>
+            </div>
+        </div>
+        <div id="titre-promo">
+            <h2>Nos Pomotions du Moment</h2>
+        </div>
+        <div id="promotions" class="row">
+            <div id="promo-desc" class="col-12 col-sm-6">
+                <p>
+                    Ne soyez pas timide et venez voir tous nos bijoux en soldes !
+                </p>
+            </div>
+            <div id="promo-img" class="col-12 col-sm-6">
+                <img src="./images/promotions.jpg" alt="">
+            </div>
+        </div>
+        <div id="titre-cadeau">
+            <h2>Offrez du Plaisir !</h2>
+        </div>
+        <div id="cadeaux" class="row">
+            <div id="cadeau-img" class="col-12 col-sm-6">
+                <img src="./images/gift.jpg" alt="">
+            </div>
+            <div id="cadeau-desc" class="col-12 col-sm-6">
+                <p>
+                    Découvrez notre sélection de bijoux à offir !
+                </p>
+            </div>
+        </div>
         <div class="row">
             <div id="maps" class="col-12 col-sm-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11044.437612948708!2d5.2002043!3d46.2082786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa21cda6ac9796fea!2sOnlineformapro!5e0!3m2!1sfr!2sfr!4v1631109394044!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -228,7 +352,7 @@
                                 <h5 class="modal-title" id="staticBackdropLabel">Conditions Générales de Ventes</h5>
                             </div>
                             <div class="modal-body">
-                            <p>Conditions Générales de Ventes
+                                <p>Conditions Générales de Ventes
                                 <br>
                                 <br>
                                 Dénomination Sociale : La Boutique de Luna
@@ -341,9 +465,6 @@
                                 <br>
                                 <br>
                                 Cet article a été mis à jour le 10 Septembre 2021.
-                                <br>
-                                <br> 
-                                <a href="https://lentreprise.lexpress.fr/vente-en-ligne-modele-de-conditions-generales-de-vente-en-ligne_1514946.html" target="_blank">Source : L'EXPRESS</a>
                                 </p>
                             </div>
                             <div class="modal-footer">

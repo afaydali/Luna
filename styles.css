@@ -22,17 +22,57 @@ body{
 #titre-site{
     margin-bottom: 40px;
 }
-h1{
-    color: var(--fourth-color);
+#titre-luna img{
+    width: 400px;
+    height: auto;
+}
+#carouselExampleCaptions {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+#desc-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1,h2,h3{
     font-family: 'Sansita Swashed', cursive;
     display: flex;
     justify-content: center;
 }
-#produits img, #matériaux img{
+#music{
+    display: flex;
+    justify-content: center;
+}
+#music iframe{
+    border-radius: 10px;
+}
+#produits img, #matériaux img, #nouveaux img, #promotions img,#cadeaux img{
     height: auto;
     width: 100%;
+    border-radius: 10px;
 }
-
+#titre-luna,.titresh2 h2,#titre-nouveaux h2,#titre-promo h2,#titre-cadeau h2{
+    font-family: 'Sansita Swashed', cursive;
+    display: flex;
+    justify-content: center;
+}
+#nouveau-desc, #promo-desc,#cadeau-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#desc-métaux h3,#desc-cristaux h3, #produits h3{
+    font-family : 'Sansita Swashed', cursive;
+    display : flex;
+    justify-content : center;
+}
 /* pour résoudre le probleme de la barre scroll horizontale */
 .row{
     margin-left: 0;
@@ -45,9 +85,7 @@ h1{
     display: flex;
     justify-content: center;
 }
-
 p{
-    color: var(--fourth-color);
     font-family: 'Sansita Swashed', cursive;
     font-size: large;
 }
@@ -64,7 +102,6 @@ button{
     border-radius: 20px;
 }
 label, h4{
-    color: var(--fourth-color);
     font-family: 'Sansita Swashed', cursive;
 }
 #horaires{
@@ -96,11 +133,9 @@ footer h4{
     display: flex;
     justify-content: center;
     font-family: 'Sansita Swashed', cursive;
-    color: var(--fourth-color);
     padding-top: 10px;
 }
 .modal-body li{
-    color: var(--fourth-color);
     font-family: 'Sansita Swashed', cursive;
 }
 a svg{
@@ -119,9 +154,79 @@ a svg{
 
 }
 @media(max-width:576px){
+    #logo img{
+        display: flex;
+        justify-content: center;
+    }
     h1{
         display: flex;
         justify-content: center;
+    }
+    #produits img, #matériaux img{
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+    }
+    #coliers{
+        display: flex;
+        order: 1;
+    }
+    #desc-collier{
+        display: flex;
+        order: 2;
+    }
+    #bracelets{
+        display: flex;
+        order: 3;
+    }
+    #desc-bracelet{
+        display: flex;
+        order: 4;
+    }
+    #bagues{
+        display: flex;
+        order: 5;
+    }
+    #desc-bague{
+        display: flex;
+        order: 6;
+    }
+    #oreilles{
+        display: flex;
+        order: 7;
+    }
+    #desc-oreilles{
+        display: flex;
+        order: 8;
+    }
+    #métaux{
+        display: flex;
+        order: 1;
+    }
+    #desc-métaux{
+        display: flex;
+        order: 2;
+    }
+    #cristaux{
+        display: flex;
+        order: 3;
+    }
+
+    #desc-cristaux{
+        display: flex;
+        order: 4;
+    }
+    #desc-métaux,#desc-cristaux,#desc-collier,#desc-bracelet,#desc-bague,#desc-oreilles{
+        display: flex;
+        justify-content: center;
+    }
+    #promo-img{
+        display: flex;
+        order: 1;
+    }
+    #promo-desc{
+        display: flex;
+        order: 2;
     }
     p{
         display: flex;
