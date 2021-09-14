@@ -23,7 +23,7 @@ body{
     margin-bottom: 40px;
 }
 #titre-luna img{
-    width: 400px;
+    width: 200px;
     height: auto;
 }
 #carouselExampleCaptions {
@@ -35,11 +35,22 @@ body{
     width: 100%;
     height: auto;
 }
+.carousel-inner img{
+    
+    border-radius: 10px;
+}
 #desc-carousel{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+#desc-cristaux, #modal-métaux{
+    display: flex;
+    justify-content: center;
+}
+#modalmétaux,#modalcristaux{
+    right: 0;
 }
 h1,h2,h3{
     font-family: 'Sansita Swashed', cursive;
@@ -52,6 +63,12 @@ h1,h2,h3{
 }
 #music iframe{
     border-radius: 10px;
+}
+#produits{
+    margin-top: 50px;
+}
+#carousel-montres{
+    margin-top: 50px;
 }
 #produits img, #matériaux img, #nouveaux img, #promotions img,#cadeaux img{
     height: auto;
@@ -67,6 +84,29 @@ h1,h2,h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+#nouveau-desc{
+    flex-direction: column;
+}
+#staticBackdropnouveaux,#staticBackdropsoldes,#staticBackdropcadeaux{
+    right: 0;
+}
+#titre-matériaux{
+    margin-top: 50px;
+}
+#titre-nouveaux{
+    margin-top: 50px;
+}
+#titre-promo{
+    margin-top: 50px;
+}
+#titre-cadeau{
+    margin-top: 50px;
+}
+#desc-métaux{
+    display: flex;
+    justify-content: center;
 }
 #desc-métaux h3,#desc-cristaux h3, #produits h3{
     font-family : 'Sansita Swashed', cursive;
@@ -78,6 +118,9 @@ h1,h2,h3{
     margin-left: 0;
     margin-right: 0;
     margin-top: 20px;
+}
+#nous-contacter{
+    margin-top: 50px;
 }
 #maps{
     padding-left: 10px;
@@ -138,6 +181,10 @@ footer h4{
 .modal-body li{
     font-family: 'Sansita Swashed', cursive;
 }
+#copyright{
+    display: flex;
+    justify-content: center;
+}
 a svg{
     height: 50px;
     width: 50px;
@@ -154,6 +201,10 @@ a svg{
 
 }
 @media(max-width:576px){
+    .row{
+        margin: 0;
+        padding: 0;
+    }
     #logo img{
         display: flex;
         justify-content: center;
@@ -203,7 +254,7 @@ a svg{
         display: flex;
         order: 1;
     }
-    #desc-métaux{
+    #modal-métaux{
         display: flex;
         order: 2;
     }
