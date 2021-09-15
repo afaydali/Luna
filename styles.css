@@ -6,6 +6,12 @@ html{
 body{
     background: var(--first-color);
 }
+#titre-site h1{
+    color: var(--fourth-color);
+}
+.carousel h2,.carousel h3, .carousel p{
+    text-shadow: 5px 3px 6px rgb(129, 131, 131);
+}
 /* header */
 .navbar{
     padding: 0;
@@ -22,10 +28,6 @@ body{
 #titre-site{
     margin-bottom: 40px;
 }
-#titre-luna img{
-    width: 200px;
-    height: auto;
-}
 #carouselExampleCaptions {
     width: 100%;
     height: auto;
@@ -36,7 +38,6 @@ body{
     height: auto;
 }
 .carousel-inner img{
-    
     border-radius: 10px;
 }
 #desc-carousel{
@@ -89,6 +90,9 @@ h1,h2,h3{
 #nouveau-desc{
     flex-direction: column;
 }
+#staticBackdrop,#modal2{
+    right: 0;
+}
 #staticBackdropnouveaux,#staticBackdropsoldes,#staticBackdropcadeaux{
     right: 0;
 }
@@ -127,6 +131,11 @@ h1,h2,h3{
     padding-right: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.titre-adress{
+    display: flex;
+    justify-content: center;
 }
 p{
     font-family: 'Sansita Swashed', cursive;
@@ -146,6 +155,12 @@ button{
 }
 label, h4{
     font-family: 'Sansita Swashed', cursive;
+}
+#email-texte textarea{
+    width: 100%;
+}
+#entrer-mail input{
+    border: black solid 1px;
 }
 #horaires{
     margin-left: 0;
@@ -181,11 +196,47 @@ footer h4{
 .modal-body li{
     font-family: 'Sansita Swashed', cursive;
 }
+#titre-paiements h2, #titre-reseaux h2{
+    color:rgb(167, 28, 169);
+}
+#paiements,#reseaux{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#paiements svg{
+    color: white;
+    width: 44px;
+    height: auto;
+}
+#reseaux svg{
+    height: 44px;
+    width: auto;
+}
+#reseaux svg:hover{
+    color: blueviolet;
+}
 #copyright{
     display: flex;
     justify-content: center;
 }
-a svg{
+#boite-credit{
+    margin-right: 20px;
+}
+#boite-facebook{
+    margin-right: 20px;
+}
+#copyright p{
+    color: rgb(167, 28, 169);
+}
+/* .haute{
+    display: flex;
+    justify-content: flex-end;
+    right: 5px;
+    bottom: 10px;
+} */
+a .bi-arrow-up-circle-fill{
     height: 50px;
     width: 50px;
     color: var(--fourth-color);
@@ -195,6 +246,12 @@ a svg{
     position: fixed;
     right: 5px;
     bottom: 20px;
+}
+.modal-dialog{
+    max-width: 50%;
+}
+footer .modal-dialog{
+    max-width: 60%;
 }
 /* les media queries */
 @media(max-width:768px){
@@ -312,5 +369,11 @@ a svg{
     }
     button{
         margin-top: 10px;
+    }
+    .modal-dialog{
+        max-width: 100%;
+    }
+    footer .modal-dialog{
+        max-width: max-content;
     }
 }
