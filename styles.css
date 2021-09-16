@@ -250,8 +250,14 @@ a .bi-arrow-up-circle-fill{
 .modal-dialog{
     max-width: 50%;
 }
+.modal-content{
+    background-color: paleturquoise;
+}
+.modal-content p, .modal-content li{
+    color: rebeccapurple;
+}
 footer .modal-dialog{
-    max-width: 60%;
+    max-width: 100%;
 }
 /* les media queries */
 @media(max-width:768px){
