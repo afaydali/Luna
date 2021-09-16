@@ -251,7 +251,7 @@ a .bi-arrow-up-circle-fill{
     max-width: 50%;
 }
 .modal-content{
-    background-color: paleturquoise;
+    background-color: var(--first-color);
 }
 .modal-content p, .modal-content li{
     color: rebeccapurple;
