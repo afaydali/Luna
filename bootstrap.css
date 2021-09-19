@@ -6,6 +6,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --noir:#000000;
+  --blanc:white;
+  --or:gold;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -2964,33 +2967,33 @@ textarea.form-control-lg {
 }
 /* couleur avant de faire un hover */
 .btn-primary {
-  color: gold;
-  background-color: rgb(167, 28, 169);
-  border-color: gold;
-  font-family: 'Sansita Swashed', cursive;
+  color: var(--or);
+  background-color: var(--noir);
+  border-color: var(--or);
+  font-family: 'Cinzel Decorative', cursive;
 }
 /* couleur lors du hover */
 .btn-primary:hover {
   color: gold;
-  background-color: plum;
+  background-color: var(--blanc);
   border-color: gold;
 }
 /* réaction après avoir appuyé sur le bouton */
 .btn-check:focus + .btn-primary, .btn-primary:focus {
-  color: #fff;
-  background-color: #df90f3;
-  border-color:  #ae00ff;
+  color: var(--or);
+  background-color: var(--blanc);
+  border-color: var(--or);
   box-shadow: 0 0 0 0.25rem gold;
 }
 /* couleurs pendant le clique sur le bouton */
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: var(--bs-purple);
-  border-color: purple;
+  color: var(--or);
+  background-color: var(--noir);
+  border-color: var(--or);
 }
 /* ombre apres avoir appuyé sur le bouton */
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(245, 11, 194, 0.5);
+  /* box-shadow: 0 0 0 0.25rem rgba(245, 11, 194, 0.5); */
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
@@ -4385,11 +4388,12 @@ textarea.form-control-lg {
 }
 /* header police */
 .navbar-light .navbar-nav .nav-link {
-  color: rgb(167, 28, 169);
-  font-family: 'Sansita Swashed', cursive;
+  color: var(--noir);
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: plum;
+  color: var(--blanc);
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
@@ -4403,7 +4407,7 @@ textarea.form-control-lg {
   border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url(./images/burger.svg);
 }
 .navbar-light .navbar-text {
   color: rgba(0, 0, 0, 0.55);
@@ -4413,7 +4417,6 @@ textarea.form-control-lg {
 .navbar-light .navbar-text a:focus {
   color: rgba(0, 0, 0, 0.9);
 }
-
 .navbar-dark .navbar-brand {
   color: #fff;
 }
@@ -7778,7 +7781,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba( var(--bs-bg-opacity));
 }
 
 .bg-dark {

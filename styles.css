@@ -1,24 +1,38 @@
 html{
-    --first-color:#e9e4f0;
-    --fourth-color:rgb(167, 28, 169);
-    --five-color:gold;
+    --background-header:rgb(95, 86, 86);
+    --background-body: ivory;
+    --second-color:black;
+    --third-color:gold;
 }
 body{
-    background: var(--first-color);
+   /* background: var(--background-body); */
+}
+p, h1, h2, h3, h4, h5, h6, label{
+    color: var(--second-color);
+    font-family: 'Cinzel Decorative', cursive;
 }
 #titre-site h1{
-    color: var(--fourth-color);
+    color: var(--or);
+}
+#navbarNav{
+    display: flex;
+    justify-content: center;
 }
 .carousel h2,.carousel h3, .carousel p{
-    text-shadow: 5px 3px 6px rgb(129, 131, 131);
+    text-shadow: 5px 3px 6px rgb(98, 100, 100);
+    color: var(--background-bodyF);
 }
 /* header */
+header{
+    background-color: var(--background-body);
+    width: 100%;
+}
 .navbar{
     padding: 0;
 }
 .navbar .container-fluid{
-    background: linear-gradient(#7ce1f5, #e9e4f0);
 }
+
 /* taille du logo */
 #logo img{
     width: 200px;
@@ -54,7 +68,6 @@ body{
     right: 0;
 }
 h1,h2,h3{
-    font-family: 'Sansita Swashed', cursive;
     display: flex;
     justify-content: center;
 }
@@ -67,9 +80,12 @@ h1,h2,h3{
 }
 #produits{
     margin-top: 50px;
+    background-color: var(--background-body);
 }
 #carousel-montres{
     margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 #produits img, #matériaux img, #nouveaux img, #promotions img,#cadeaux img{
     height: auto;
@@ -77,11 +93,10 @@ h1,h2,h3{
     border-radius: 10px;
 }
 #titre-luna,.titresh2 h2,#titre-nouveaux h2,#titre-promo h2,#titre-cadeau h2{
-    font-family: 'Sansita Swashed', cursive;
     display: flex;
     justify-content: center;
 }
-#nouveau-desc, #promo-desc,#cadeau-desc{
+#nouveau-desc, #promo-desc,#cadeau-desc, #desc-carousel{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,8 +127,11 @@ h1,h2,h3{
     display: flex;
     justify-content: center;
 }
+#produits, #matériaux, #nouveaux, #promotions{
+    background-color: var(--background-body);
+    padding-top: 20px;
+}
 #desc-métaux h3,#desc-cristaux h3, #produits h3{
-    font-family : 'Sansita Swashed', cursive;
     display : flex;
     justify-content : center;
 }
@@ -125,6 +143,10 @@ h1,h2,h3{
 }
 #nous-contacter{
     margin-top: 50px;
+   background-color: var(--background-body);
+}
+#boutique{
+    text-align: center;
 }
 #maps{
     padding-left: 10px;
@@ -138,7 +160,6 @@ h1,h2,h3{
     justify-content: center;
 }
 p{
-    font-family: 'Sansita Swashed', cursive;
     font-size: large;
 }
 #bouton{
@@ -154,7 +175,6 @@ button{
     border-radius: 20px;
 }
 label, h4{
-    font-family: 'Sansita Swashed', cursive;
 }
 #email-texte textarea{
     width: 100%;
@@ -174,7 +194,7 @@ label, h4{
 }
 /* footer */
 footer{
-    background: linear-gradient(#e9e4f0,#7ce1f5);
+    background: url(./images/footer.jpg);
 }
 #mentions{
     display: flex;
@@ -187,17 +207,18 @@ footer{
     justify-content: center;
     margin-bottom: 40px;
 }
+#conditions button{
+    margin-left: 0;
+}
 footer h4{
     display: flex;
     justify-content: center;
-    font-family: 'Sansita Swashed', cursive;
     padding-top: 10px;
 }
 .modal-body li{
-    font-family: 'Sansita Swashed', cursive;
 }
 #titre-paiements h2, #titre-reseaux h2{
-    color:rgb(167, 28, 169);
+    color:var(--second-color);
 }
 #paiements,#reseaux{
     display: flex;
@@ -206,16 +227,17 @@ footer h4{
     margin-bottom: 20px;
 }
 #paiements svg{
-    color: white;
+    color: var(--second-color);
     width: 44px;
     height: auto;
 }
 #reseaux svg{
     height: 44px;
     width: auto;
+    color: var(--second-color);
 }
 #reseaux svg:hover{
-    color: blueviolet;
+    color: var(--or);
 }
 #copyright{
     display: flex;
@@ -228,18 +250,12 @@ footer h4{
     margin-right: 20px;
 }
 #copyright p{
-    color: rgb(167, 28, 169);
+    color: var(--blanc);
 }
-/* .haute{
-    display: flex;
-    justify-content: flex-end;
-    right: 5px;
-    bottom: 10px;
-} */
 a .bi-arrow-up-circle-fill{
     height: 50px;
     width: 50px;
-    color: var(--fourth-color);
+    color: var(--second-color);
     /* pour placer un bouton "vers le haut" */
     position: right;
     position: bottom;
@@ -247,14 +263,17 @@ a .bi-arrow-up-circle-fill{
     right: 5px;
     bottom: 20px;
 }
+a .bi-arrow-up-circle-fill:hover{
+    color: var(--blanc);
+}
 .modal-dialog{
     max-width: 50%;
 }
 .modal-content{
-    background-color: var(--first-color);
+    background-color: var(--noir);
 }
 .modal-content p, .modal-content li{
-    color: rebeccapurple;
+    color: var(--or);
 }
 footer .modal-dialog{
     max-width: 100%;
