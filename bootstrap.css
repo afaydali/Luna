@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --background-body: ivory;
   --noir:#000000;
   --blanc:white;
   --or:gold;
@@ -2967,8 +2968,8 @@ textarea.form-control-lg {
 }
 /* couleur avant de faire un hover */
 .btn-primary {
-  color: var(--or);
-  background-color: var(--noir);
+  color: var(--noir);
+  background-color: var(--bs-white);
   border-color: var(--or);
   font-family: 'Cinzel Decorative', cursive;
 }
@@ -2980,7 +2981,7 @@ textarea.form-control-lg {
 }
 /* réaction après avoir appuyé sur le bouton */
 .btn-check:focus + .btn-primary, .btn-primary:focus {
-  color: var(--or);
+  color: var(--noir);
   background-color: var(--blanc);
   border-color: var(--or);
   box-shadow: 0 0 0 0.25rem gold;
@@ -2988,7 +2989,7 @@ textarea.form-control-lg {
 /* couleurs pendant le clique sur le bouton */
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: var(--or);
-  background-color: var(--noir);
+  background-color: var(--background-body);
   border-color: var(--or);
 }
 /* ombre apres avoir appuyé sur le bouton */

@@ -7,12 +7,13 @@ html{
 body{
    /* background: var(--background-body); */
 }
-p, h1, h2, h3, h4, h5, h6, label{
+p, h1, h2, h3, h4, h5, h6, label,li{
     color: var(--second-color);
     font-family: 'Cinzel Decorative', cursive;
 }
 #titre-site h1{
     color: var(--or);
+    margin-top: 20px;
 }
 #navbarNav{
     display: flex;
@@ -79,7 +80,7 @@ h1,h2,h3{
     border-radius: 10px;
 }
 #produits{
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: var(--background-body);
 }
 #carousel-montres{
@@ -194,7 +195,7 @@ label, h4{
 }
 /* footer */
 footer{
-    background: url(./images/footer.jpg);
+    background-color: var(--second-color);
 }
 #mentions{
     display: flex;
@@ -218,7 +219,7 @@ footer h4{
 .modal-body li{
 }
 #titre-paiements h2, #titre-reseaux h2{
-    color:var(--second-color);
+    color:var(--third-color);
 }
 #paiements,#reseaux{
     display: flex;
@@ -227,14 +228,14 @@ footer h4{
     margin-bottom: 20px;
 }
 #paiements svg{
-    color: var(--second-color);
+    color: var(--background-body);
     width: 44px;
     height: auto;
 }
 #reseaux svg{
     height: 44px;
     width: auto;
-    color: var(--second-color);
+    color: var(--background-body);
 }
 #reseaux svg:hover{
     color: var(--or);
@@ -250,12 +251,12 @@ footer h4{
     margin-right: 20px;
 }
 #copyright p{
-    color: var(--blanc);
+    color: var(--second-color);
 }
 a .bi-arrow-up-circle-fill{
     height: 50px;
     width: 50px;
-    color: var(--second-color);
+    color: var(--third-color);
     /* pour placer un bouton "vers le haut" */
     position: right;
     position: bottom;
@@ -270,24 +271,25 @@ a .bi-arrow-up-circle-fill:hover{
     max-width: 50%;
 }
 .modal-content{
-    background-color: var(--noir);
+    background-color: var(--background-body);
 }
 .modal-content p, .modal-content li{
-    color: var(--or);
+    color: var(--second-color);
 }
 footer .modal-dialog{
     max-width: 100%;
 }
 /* les media queries */
-@media(max-width:768px){
 
-}
 @media(max-width:576px){
     .row{
         margin: 0;
         padding: 0;
     }
-    
+    .navbar .container-fluid{
+        display: flex;
+        justify-content: center;
+    }
     #logo img{
         display: flex;
         justify-content: center;
@@ -394,6 +396,10 @@ footer .modal-dialog{
         display: flex;
         justify-content: center;
     }
+    #conditions button{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     button{
         margin-top: 10px;
     }
@@ -402,5 +408,11 @@ footer .modal-dialog{
     }
     footer .modal-dialog{
         max-width: max-content;
+    }
+}
+@media(max-width:994px){
+    .navbar .container-fluid{
+        display: flex;
+        justify-content: center;
     }
 }
