@@ -1,6 +1,6 @@
 html{
     --background-header:rgb(95, 86, 86);
-    --background-body: ivory;
+    --background-body: floralwhite;
     --second-color:black;
     --third-color:gold;
 }
@@ -12,7 +12,6 @@ p, h1, h2, h3, h4, h5, h6, label,li, #emailHelp{
     font-family: 'Cinzel Decorative', cursive;
 }
 #titre-site h1{
-    color: var(--or);
     margin-top: 20px;
 }
 #navbarNav{
@@ -21,11 +20,11 @@ p, h1, h2, h3, h4, h5, h6, label,li, #emailHelp{
 }
 .carousel h2,.carousel h3, .carousel p{
     text-shadow: 5px 3px 6px rgb(98, 100, 100);
-    color: var(--background-bodyF);
+    color: var(--background-body);
 }
 /* header */
 header{
-    background-color: var(--background-body);
+    background-color:var(--background-body);
     width: 100%;
 }
 .navbar{
@@ -33,15 +32,21 @@ header{
 }
 .navbar .container-fluid{
 }
-
 /* taille du logo */
 #logo img{
     width: 200px;
     height: 200px;
 }
 /* section */
+#slogan{
+    text-align: center;
+}
 #titre-site{
     margin-bottom: 40px;
+    background: url(./images/fond\ scintillant.jpg);
+}
+#titre-montres{
+    margin-top: 20px;
 }
 #carouselExampleCaptions {
     width: 100%;
@@ -84,7 +89,7 @@ h1,h2,h3{
     background-color: var(--background-body);
 }
 #carousel-montres{
-    margin-top: 50px;
+    margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: var(--background-body);
@@ -93,6 +98,9 @@ h1,h2,h3{
     height: auto;
     width: 100%;
     border-radius: 10px;
+}
+#titre-luna{
+    /* background:url(./images/fond\ scintillant.jpg); */
 }
 #titre-luna,.titresh2 h2,#titre-nouveaux h2,#titre-promo h2,#titre-cadeau h2{
     display: flex;
@@ -210,7 +218,8 @@ label, h4{
 }
 /* footer */
 footer{
-    background-color: var(--second-color);
+    background: url(./images/fond\ scintillant.jpg);
+    margin-top: 20px;
 }
 #mentions{
     display: flex;
@@ -234,7 +243,7 @@ footer h4{
 .modal-body li{
 }
 #titre-paiements h2, #titre-reseaux h2{
-    color:var(--third-color);
+    color:var(--second-color);
 }
 #paiements,#reseaux{
     display: flex;
@@ -243,14 +252,14 @@ footer h4{
     margin-bottom: 20px;
 }
 #paiements svg{
-    color: var(--background-body);
+    color: var(--second-color);
     width: 44px;
     height: auto;
 }
 #reseaux svg{
     height: 44px;
     width: auto;
-    color: var(--background-body);
+    color: var(--second-color);
 }
 #reseaux svg:hover{
     color: var(--or);
@@ -271,7 +280,7 @@ footer h4{
 a .bi-arrow-up-circle-fill{
     height: 50px;
     width: 50px;
-    color: var(--third-color);
+    color: var(--second-color);
     /* pour placer un bouton "back to top" */
     position: right;
     position: bottom;
@@ -301,10 +310,10 @@ footer .modal-dialog{
         margin: 0;
         padding: 0;
     }
-    .navbar .container-fluid{
+    /* .navbar .container-fluid{
         display: flex;
         justify-content: center;
-    }
+    } */
     #logo img{
         display: flex;
         justify-content: center;
@@ -430,8 +439,8 @@ footer .modal-dialog{
     }
 }
 @media(max-width:994px){
-    .navbar .container-fluid{
+    /* .navbar .container-fluid{
         display: flex;
         justify-content: center;
-    }
+    } */
 }
