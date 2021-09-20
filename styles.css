@@ -303,6 +303,17 @@ a .bi-arrow-up-circle-fill:hover{
 footer .modal-dialog{
     max-width: 100%;
 }
+#colliers, #bracelets, #bagues, #oreilles{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.zoom {
+    transition: all 0.2s;
+}
+.zoom:hover {
+    transform:scale(1.1);
+}
+
 /* les media queries */
 
 @media(max-width:576px){
