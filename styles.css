@@ -1,11 +1,10 @@
 html{
-    --background-header:rgb(95, 86, 86);
-    --background-body: floralwhite;
+    --first-color: lavenderblush;
     --second-color:black;
     --third-color:gold;
 }
 body{
-   /* background: var(--background-body); */
+   background: var(--first-color);
 }
 p, h1, h2, h3, h4, h5, h6, label,li, #emailHelp{
     color: var(--second-color);
@@ -20,11 +19,11 @@ p, h1, h2, h3, h4, h5, h6, label,li, #emailHelp{
 }
 .carousel h2,.carousel h3, .carousel p{
     text-shadow: 5px 3px 6px rgb(98, 100, 100);
-    color: var(--background-body);
+    color: var(--third-color);
 }
 /* header */
 header{
-    background-color:var(--background-body);
+    background: url(./images/paillettes.jpg);
     width: 100%;
 }
 .navbar{
@@ -43,7 +42,6 @@ header{
 }
 #titre-site{
     margin-bottom: 40px;
-    background: url(./images/fond\ scintillant.jpg);
 }
 #titre-montres{
     margin-top: 20px;
@@ -86,13 +84,11 @@ h1,h2,h3{
 }
 #produits{
     margin-top: 20px;
-    background-color: var(--background-body);
 }
 #carousel-montres{
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: var(--background-body);
 }
 #produits img, #matériaux img, #nouveaux img, #promotions img,#cadeaux img{
     height: auto;
@@ -138,7 +134,6 @@ h1,h2,h3{
     justify-content: center;
 }
 #produits, #matériaux, #nouveaux, #promotions{
-    background-color: var(--background-body);
     padding-top: 20px;
 }
 #desc-métaux h3,#desc-cristaux h3, #produits h3{
@@ -153,7 +148,6 @@ h1,h2,h3{
 }
 #nous-contacter{
     margin-top: 50px;
-   background-color: var(--background-body);
 }
 #boutique{
     text-align: center;
@@ -203,7 +197,6 @@ label, h4{
     margin-bottom: 40px;
 }
 #partie-news{
-    background-color: var(--background-body);
 }
 #news{
     text-align: center;
@@ -295,7 +288,7 @@ a .bi-arrow-up-circle-fill:hover{
     max-width: 50%;
 }
 .modal-content{
-    background-color: var(--background-body);
+    background-color: var(--first-color);
 }
 .modal-content p, .modal-content li{
     color: var(--second-color);
@@ -308,10 +301,10 @@ footer .modal-dialog{
     border-radius: 10px;
 }
 .zoom {
-    transition: all 0.2s;
+    transition: ease-in-out 0.4s;
 }
 .zoom:hover {
-    transform:scale(1.1);
+    transform:scale(1.2);
 }
 
 /* les media queries */
